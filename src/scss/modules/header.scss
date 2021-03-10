@@ -1,10 +1,106 @@
-// .header {
-//     position: absolute;
-//     &__menu {
-//         @media (max-width: $bp-mobile-max) {
-//         }
-    
-//         @media (min-width: $bp-mobile-min) {
-//         }
-//     }
-// }
+.header-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba($color: #0b1419, $alpha: .9);
+    padding: 9px 0;
+    overflow: hidden;
+
+    @include media-max($bp-md) {
+        padding: 5px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__start {}
+
+    &__end {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        margin-right: 20px;
+        @include media-max($bp-md) {
+            display: none;
+        }
+    }
+
+    &__ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__li {}
+
+    &__link {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        color: $color-white;
+        display: block;
+        padding: 15px 30px;
+        text-decoration: none;
+        position: relative; 
+
+        @include media-max($bp-lg) {
+            font-size: 16px;
+            padding: 12px 30px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: $color-white;
+            width: 100%;
+            height: calc(100% + 40px);
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all .3s linear;
+        }
+
+        &:hover, &:focus {
+            color: $color-dark;
+        }
+        &:hover::before,
+        &:focus::before {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        position: relative;
+        transition: all .3s linear;
+    }
+
+    &__phone {
+        @include media-max($bp-lg) {
+            font-size: 14px;
+            padding: 7px 16px;
+        }
+
+        @include media-max(480px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        display: block;
+        margin-right: -15px;
+
+        @include media-min($bp-md) {
+            display: none;
+        }
+    }
+}

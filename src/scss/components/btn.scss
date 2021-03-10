@@ -1,0 +1,31 @@
+.btn {
+    max-width: 240px;
+    width: 100%;
+    background-color: #ff5441;
+    box-shadow: 0px 0px 38px 0px rgba(#d44232, 0.8) ;
+    border-radius: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    padding: 18px 75px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s linear;
+
+    &:hover, &:focus {
+        background-color: darken(#ff5441, 5%);
+    }
+
+    &:active {
+        opacity: 0.7;
+        transform: scale(.95);
+    }
+    @include media-max($bp-xs) {
+        font-size: 16px;
+        max-width: 220px;
+        padding: 16px 60px;
+    }
+}

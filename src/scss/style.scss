@@ -1,5 +1,6 @@
 @import "fonts";
 @import "vars";
+@import "mixins";
 
 *, 
 *::before,
@@ -7,4 +8,19 @@
     box-sizing: border-box;
 }
 
-// @import 'modules/header.scss';
+body {
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.375;
+    color: $color-dark;
+}
+
+@import 'components/container.scss';
+@import 'components/btn.scss';
+@import 'components/phone.scss';
+@import 'components/burger-menu.scss';
+
+@import 'modules/header.scss';
+@import 'modules/section-top.scss';
