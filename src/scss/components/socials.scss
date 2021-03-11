@@ -1,0 +1,43 @@
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 7px;
+    @include media-max($bp-sm) {
+        column-gap: 15px;
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__icon {
+        fill: $color-accent;
+        width: 35px;
+        height: 35px;
+        transition: fill .3s opacity .3s;
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        &--vk:hover {
+            fill: #5078A5;
+        }
+        &--fb:hover {
+            fill: #3e58A1;
+        }
+        &--inst:hover {
+            fill:#e6369c;
+        }
+
+        @include media-max($bp-sm) {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__logo {
+        fill: $color-white;
+    }
+}

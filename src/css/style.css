@@ -489,6 +489,12 @@ img {
   margin-bottom: 90px;
 }
 
+@media (max-width: 576px) {
+  .section__header {
+    margin-bottom: 70px;
+  }
+}
+
 .section__title {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
@@ -505,6 +511,66 @@ img {
   .section__title {
     font-size: 36px;
   }
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+
+@media (max-width: 767px) {
+  .socials {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+
+.socials__link {
+  display: inline-block;
+}
+
+.socials__icon {
+  fill: #ffa650;
+  width: 35px;
+  height: 35px;
+  -webkit-transition: fill .3s opacity .3s;
+  -o-transition: fill .3s opacity .3s;
+  transition: fill .3s opacity .3s;
+}
+
+.socials__icon:active {
+  opacity: 0.7;
+}
+
+.socials__icon--vk:hover {
+  fill: #5078A5;
+}
+
+.socials__icon--fb:hover {
+  fill: #3e58A1;
+}
+
+.socials__icon--inst:hover {
+  fill: #e6369c;
+}
+
+@media (max-width: 767px) {
+  .socials__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.socials__logo {
+  fill: #fff;
 }
 
 .header-page {
@@ -1125,4 +1191,172 @@ img {
   line-height: 1.67;
   font-weight: 300;
   color: #ffffff;
+}
+
+.section-contacts {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .section-contacts {
+    padding-bottom: 0;
+  }
+}
+
+.section-contacts__container {
+  position: relative;
+}
+
+.section-contacts__container::before {
+  content: '';
+  position: absolute;
+  background: url(../../img/section-contacts/tomatoes.jpg) no-repeat;
+  background-size: cover;
+  width: 672px;
+  height: 397px;
+  bottom: -100px;
+  right: -350px;
+}
+
+@media (max-width: 1800px) {
+  .section-contacts__container::before {
+    right: -250px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .section-contacts__container::before {
+    right: -150px;
+    bottom: -200px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-contacts__container::before {
+    right: -100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-contacts__container::before {
+    right: -50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-contacts__container::before {
+    content: none;
+  }
+}
+
+.section-contacts__title {
+  margin-bottom: 0;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__start {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .contacts__start {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.contacts__map {
+  height: 450px;
+  background-color: #fef0b4;
+}
+
+@media (max-width: 992px) {
+  .contacts__map {
+    height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__map {
+    margin: 0 -20px;
+    height: 300px;
+  }
+}
+
+.contacts__end {
+  width: 50%;
+  padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .contacts__end {
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+}
+
+.contacts__item {
+  margin-bottom: 35px;
+}
+
+.contacts__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.contacts__text {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contacts__phone {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.contacts__phone:hover, .contacts__phone:focus {
+  color: #ffa650;
+}
+
+.footer-page {
+  background: -webkit-gradient(linear, left bottom, left top, from(#2b2b2b), to(#1f1f1f));
+  background: -o-linear-gradient(bottom, #2b2b2b, #1f1f1f);
+  background: linear-gradient(to top, #2b2b2b, #1f1f1f);
+  padding: 25px 0;
+}
+
+.footer-page__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
 }

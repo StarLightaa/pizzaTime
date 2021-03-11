@@ -6,6 +6,9 @@
 
     &__header {
         margin-bottom: 90px;
+        @include media-max($bp-xs) {
+            margin-bottom: 70px;
+        }
     }
 
     &__title {
