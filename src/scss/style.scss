@@ -17,10 +17,17 @@ body {
     color: $color-dark;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @import 'components/container.scss';
 @import 'components/btn.scss';
 @import 'components/phone.scss';
 @import 'components/burger-menu.scss';
+@import 'components/section.scss';
 
-@import 'modules/header.scss';
+@import 'modules/header-page.scss';
 @import 'modules/section-top.scss';
+@import 'modules/section-catalog.scss';

@@ -67,7 +67,7 @@
             height: calc(100% + 40px);
             transform: translateY(-50%);
             opacity: 0;
-            transition: all .3s linear;
+            transition: color .3s, background-color .3s, opacity .3s;
         }
 
         &:hover, &:focus {
@@ -81,7 +81,7 @@
 
     &__text {
         position: relative;
-        transition: all .3s linear;
+        transition: color .3s linear;
     }
 
     &__phone {
