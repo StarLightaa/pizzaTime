@@ -1,0 +1,15 @@
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 auto 40px;
+
+    &--accent {
+        color: $color-accent;
+    }
+
+    @include media-max($bp-xs) {
+        font-size: 36px;
+    }
+}

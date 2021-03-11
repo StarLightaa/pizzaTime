@@ -1,0 +1,28 @@
+.form {
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 20px 28px;
+        background: #f7f7f7;
+        border-radius: 32px;
+        margin-bottom: 8px;
+        border: 2px solid transparent;
+        outline: none;
+
+        &:focus {
+            border-color: $color-accent;
+        }
+    }
+
+    &__btn {
+        box-shadow: none;
+        width: 100%;
+        background: $color-accent;
+        padding: 22px 28px;
+        border-radius: 50px;
+
+        &:hover, &:focus {
+            background-color: darken($color-accent, 5%);
+        }
+    }
+}

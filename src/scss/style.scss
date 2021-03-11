@@ -26,8 +26,15 @@ img {
 @import 'components/btn.scss';
 @import 'components/phone.scss';
 @import 'components/burger-menu.scss';
+@import 'components/page-title.scss';
 @import 'components/section.scss';
 @import 'components/socials.scss';
+@import 'components/btn-close.scss';
+@import 'components/popup.scss';
+@import 'components/mobile-menu.scss';
+@import 'components/order.scss';
+@import 'components/form.scss';
+
 
 @import 'modules/header-page.scss';
 @import 'modules/section-top.scss';
@@ -35,3 +42,4 @@ img {
 @import 'modules/section.about.scss';
 @import 'modules/section-contacts.scss';
 @import 'modules/footer-page.scss';
+

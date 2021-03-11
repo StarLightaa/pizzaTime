@@ -20,5 +20,14 @@
         &:active {
             opacity: 0.8;
         }
+
+        &--accent {
+            border-color: $color-accent;
+            color: $color-accent;
+            &:hover, &:focus {
+                color: $color-white;
+                background-color: $color-accent;
+            }
+        }
     }
 }

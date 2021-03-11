@@ -1,0 +1,25 @@
+.order {
+    max-width: 310px;
+    margin: 0 auto;
+
+    &__img {
+        width: 186px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    &__title {
+        margin: 0 0 5px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+
+    &__size {
+        margin: 0 auto 30px;
+        color: #a2a2a2;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: center;
+    }
+}

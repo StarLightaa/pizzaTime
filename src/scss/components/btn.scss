@@ -1,6 +1,6 @@
 .btn {
-    max-width: 240px;
-    width: 100%;
+    width: 240px;
+    max-width: 100%;
     background-color: #ff5441;
     box-shadow: 0px 0px 38px 0px rgba(#d44232, 0.8) ;
     border-radius: 28px;
@@ -25,7 +25,7 @@
     }
     @include media-max($bp-xs) {
         font-size: 16px;
-        max-width: 220px;
+        width: 220px;
         padding: 16px 60px;
     }
 }
