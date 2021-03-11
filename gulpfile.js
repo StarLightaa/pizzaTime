@@ -16,7 +16,9 @@ function browsersync() {
     browserSync.init({
         server : {
             baseDir: 'src/'
-        }
+        },
+        online: true,
+        tunnel: 'test',
     });
 }
 
