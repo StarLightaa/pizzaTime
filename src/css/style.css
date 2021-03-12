@@ -365,6 +365,10 @@ img {
   overflow: hidden;
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
 .container {
   width: 1200px;
   max-width: 100%;

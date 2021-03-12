@@ -26,6 +26,10 @@ img {
     overflow: hidden;
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+  }
+
 @import 'components/container.scss';
 @import 'components/btn.scss';
 @import 'components/phone.scss';
