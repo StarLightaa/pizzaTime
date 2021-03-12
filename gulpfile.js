@@ -109,6 +109,7 @@ function build() {
         'src/css/style.min.css',
         'src/css/style.css',
         'src/fonts/**/*',
+        'src/mail/**/*',
         'src/js/main.min.js',
         'src/*.html'
     ], {base:'src'})
