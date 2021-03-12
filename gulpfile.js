@@ -29,17 +29,18 @@ function cleanDist() {
 
 function images() {
     return src('src/img/**/*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
+        // https://squoosh.app/
+        // .pipe(imagemin([
+        //     imagemin.gifsicle({interlaced: true}),
+        //     imagemin.mozjpeg({quality: 75, progressive: true}),
+        //     imagemin.optipng({optimizationLevel: 5}),
+        //     imagemin.svgo({
+        //         plugins: [
+        //             {removeViewBox: true},
+        //             {cleanupIDs: false}
+        //         ]
+        //     })
+        // ]))
         .pipe(dest('dist/img'))
 }
 
@@ -71,6 +72,7 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/focus-visible/dist/focus-visible.min.js',
+        'node_modules/vanilla-lazyload/dist/lazyload.min.js',
         'src/js/**/*.js'
     ])
     // .pipe(order([

@@ -4,33 +4,34 @@
         padding-bottom: 0;
     }
 }
+
 .section-contacts__container {
     position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        background: url(../../img/section-contacts/tomatoes.jpg) no-repeat;
-        background-size: cover;
-        width: 672px;
-        height: 397px;
-        bottom: -100px;
-        right: -350px;
-        @include media-max(1800px) {
-            right: -250px;
-        }
-        @include media-max(1600px) {
-            right: -150px;
-            bottom: -200px;
-        }
-        @include media-max(1400px) {
-            right: -100px;
-        }
-        @include media-max(1300px) {
-            right: -50px;
-        }
-        @include media-max(1200px) {
-            content: none;
-        }
+}
+
+.section-contacts__img {
+    position: absolute;
+    background: no-repeat;
+    background-size: cover;
+    width: 672px;
+    height: 397px;
+    bottom: -100px;
+    right: -350px;
+    @include media-max(1800px) {
+        right: -250px;
+    }
+    @include media-max(1600px) {
+        right: -150px;
+        bottom: -200px;
+    }
+    @include media-max(1400px) {
+        right: -100px;
+    }
+    @include media-max(1300px) {
+        right: -50px;
+    }
+    @include media-max(1200px) {
+        display: none;
     }
 }
 

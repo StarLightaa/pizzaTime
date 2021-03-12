@@ -16,7 +16,7 @@
         <div class="container header-page__container">
             <div class="header-page__start">
                 <a class="logo" href="/">
-                    <img class="logo__img" src="img/common/logo.svg" alt="" width="127" height="21">
+                    <img class="logo__img lazy" data-src="img/common/logo.svg" alt="" width="127" height="21">
                 </a>
             </div>
             <div class="header-page__end">
@@ -56,7 +56,7 @@
     <!-- /.header-page -->
 
     <!-- section-top -->
-    <section class="section-top">
+    <section class="section-top lazy" data-bg="img/section-top/header__bg-img.webp" data-bg-replace-webp="img/section-top/header__bg-img.jpg">
         <div class="container section-top__container">
             <p class="section-top__info">от итальянского повара</p>
             <h1 class="section-top__title">Лучшая пицца в Москве</h1>
@@ -93,7 +93,10 @@
             <div class="catalog">
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/1.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/1.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/1.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Салями</h3>
                             <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус</p>
@@ -117,7 +120,10 @@
 
                 <div class="catalog__item" data-category="meat">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/2.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/2.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/2.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Хит</h3>
                             <p class="product__description">Картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус</p>
@@ -141,7 +147,10 @@
 
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/3.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/3.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/3.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Ветчина-грибы</h3>
                             <p class="product__description">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и французский соус</p>
@@ -165,7 +174,10 @@
 
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/4.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/4.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/4.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Карбонара</h3>
                             <p class="product__description">Салями, курица, моцарелла, говядина, ветчина и французский соус</p>
@@ -189,7 +201,10 @@
 
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/5.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/5.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/5.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Фирменная</h3>
                             <p class="product__description">Томатно-сливочный соус, бекон, моцарелла</p>
@@ -214,7 +229,10 @@
 
                 <div class="catalog__item" data-category="meat">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/6.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/6.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/6.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Ассорти</h3>
                             <p class="product__description">Картофель моцарелла, цыпленок, грибы, ветчина и французский соус</p>
@@ -239,7 +257,10 @@
 
                 <div class="catalog__item" data-category="mushrooms">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/7.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/7.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/7.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Л-01</h3>
                             <p class="product__description">Томаты, моцарелла, цыпленок, ветчина и французский соус, секректныйингредиент</p>
@@ -264,7 +285,10 @@
 
                 <div class="catalog__item" data-category="cheese">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/8.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/8.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/8.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Три сыра</h3>
                             <p class="product__description">Чеддер, камамбер, эдам</p>
@@ -288,7 +312,10 @@
 
                 <div class="catalog__item" data-category="meat">
                     <div class="product catalog__product">
-                        <img class="product__img" src="img/section-catalog/9.jpg" alt="">
+                        <picture>
+                            <source type="image/webp" data-srcset="img/section-catalog/9.webp"/>
+                            <img class="product__img lazy" data-src="img/section-catalog/9.jpg" alt=""/>
+                        </picture>
                         <div class="product__content">
                             <h3 class="product__title">Мясная</h3>
                             <p class="product__description">Курица, говядина, сливочный соус, салями, огурцы маринованные, томаты, грибы, бекон</p>
@@ -316,7 +343,10 @@
 
     <!-- section-about -->
     <section class="section section-about">
-        <img class="section-about__img" src="img/section-about/bg.jpg.jpg" alt="">
+        <picture>
+            <source type="image/webp" data-srcset="img/section-about/bg.jpg.webp"/>
+            <img class="section-about__img lazy" data-src="img/section-about/bg.jpg.jpg" alt=""/>
+        </picture>
         <div class="container section-about__container">
             <div class="section-about__content">
                 <h2 class="page-title section-about__title">О нас</h2>
@@ -329,6 +359,7 @@
     <!-- section-contacts -->
     <section class="section section-contacts">
         <div class="container section-contacts__container">
+            <div class="section-contacts__img lazy" data-bg="img/section-contacts/tomatoes.webp" data-bg-replace-webp="img/section-contacts/tomatoes.jpg"></div>
             <header class="section__header">
                 <h2 class="page-title section-contacts__title">Контакты</h2>
             </header>

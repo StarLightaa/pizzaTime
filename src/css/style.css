@@ -999,7 +999,7 @@ img {
 .section-top {
   height: 100vh;
   min-height: 600px;
-  background: #0e1419 url(../../img/section-top/header__bg-img.jpg);
+  background: #0e1419;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1498,10 +1498,9 @@ img {
   position: relative;
 }
 
-.section-contacts__container::before {
-  content: '';
+.section-contacts__img {
   position: absolute;
-  background: url(../../img/section-contacts/tomatoes.jpg) no-repeat;
+  background: no-repeat;
   background-size: cover;
   width: 672px;
   height: 397px;
@@ -1510,33 +1509,33 @@ img {
 }
 
 @media (max-width: 1800px) {
-  .section-contacts__container::before {
+  .section-contacts__img {
     right: -250px;
   }
 }
 
 @media (max-width: 1600px) {
-  .section-contacts__container::before {
+  .section-contacts__img {
     right: -150px;
     bottom: -200px;
   }
 }
 
 @media (max-width: 1400px) {
-  .section-contacts__container::before {
+  .section-contacts__img {
     right: -100px;
   }
 }
 
 @media (max-width: 1300px) {
-  .section-contacts__container::before {
+  .section-contacts__img {
     right: -50px;
   }
 }
 
 @media (max-width: 1200px) {
-  .section-contacts__container::before {
-    content: none;
+  .section-contacts__img {
+    display: none;
   }
 }
 
