@@ -32,6 +32,7 @@
         myLib.body.appendChild(script);
         script.onload = yMapInit;
     }
+    
     var checkYmapInit = function() {
         var sectionContactsTop = sectionContacts.getBoundingClientRect().top;
         var scrollTop = window.pageYOffset;
