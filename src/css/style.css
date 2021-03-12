@@ -376,6 +376,11 @@ img {
   margin: 0 auto;
 }
 
+.logo__img {
+  width: 127px;
+  height: 19px;
+}
+
 .btn {
   width: 240px;
   max-width: 100%;
@@ -1294,6 +1299,14 @@ img {
 .product__img {
   display: block;
   margin: 0 auto 15px;
+  width: 340px;
+  height: 207px;
+}
+
+@media (max-width: 1200px) {
+  .product__img {
+    height: auto;
+  }
 }
 
 .product__content {

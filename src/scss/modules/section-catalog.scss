@@ -183,6 +183,11 @@
     &__img {
         display: block;
         margin: 0 auto 15px;
+        width: 340px;
+        height: 207px;
+        @include media-max($bp-lg) {
+            height: auto;
+        }
     }
 
     &__content {
