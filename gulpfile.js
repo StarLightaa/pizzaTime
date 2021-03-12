@@ -11,6 +11,7 @@ const del = require('del');
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const fonter = require('gulp-fonter');
+const order = require("gulp-order");
 
 function browsersync() {
     browserSync.init({
@@ -70,8 +71,14 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/focus-visible/dist/focus-visible.min.js',
-        'src/js/main.js'
+        'src/js/**/*.js'
     ])
+    // .pipe(order([
+    //     "vendor/js1.js",
+    //     "vendor/**/*.js",
+    //     "app/coffee1.js",
+    //     "app/**/*.js"
+    // ]))
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('src/js')) 
